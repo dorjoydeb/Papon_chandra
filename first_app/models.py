@@ -23,7 +23,7 @@ class Email_info(models.Model):
     Name = models.CharField(max_length=50, blank=False)
     Email = models.EmailField(max_length=50, blank=False)
     Subject = models.CharField(max_length=100, blank=True)
-    Phone = models.IntegerField(default=None)
+    Phone = models.IntegerField(blank=True, default=None)
     Message = models.TextField(max_length=800, blank=False)
 
     def __str__(self):
